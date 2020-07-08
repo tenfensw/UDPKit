@@ -88,14 +88,15 @@ NS_ASSUME_NONNULL_BEGIN
 @brief Continuous run loop that listens for client connections, processes them and responds to them (asynchronous).
 @discussion After the connection is processed into an instance of UDPClientRequest, the specified callback block is called. That block may return <b>nil</b> if no response is assumed from the server or a non-zero instance of NSData if a response needs to be sent.
 
-         @code
+<pre>@textblock
          UDPServer* server = [UDPServer serverWithPort:7070];
          [server asynchroniouslyAcceptRequestsWithCallback:^NSData* _Nullable (UDPClientRequest* request) {
             NSLog(@"Request from %@: %@", [request ipAddress], [request stringData]);
             NSString* reversedString = [[request stringData] lowercaseString];
             return [reversedString dataUsingEncoding:NSUTF8StringEncoding];
          }];
-         @endcode
+@/textblock </pre>
+ 
 The run loop can be controlled via the <em>needAcceptRequests</em> property. A simple @c[server setNeedAcceptRequests:NO] will stop the run loop right after it finishes processing the last received request.
 @param callback An non-nil Objective-C block returning nil or a valid instance of NSData that will be called on each received request from clients.
 */
@@ -104,12 +105,12 @@ The run loop can be controlled via the <em>needAcceptRequests</em> property. A s
 /*!
 @brief Sends a response packet with the specified non-nil data directly to the specified connected client.
 @discussion This method is automatically called when in a continuous run loop and the only reason to call it manually is when the connection handling is done manually.
-        @code
+<pre>@textblock
         UDPServer* server = [UDPServer serverWithPort:7070];
         UDPClientRequest* firstRequest = [server waitForRequest];
         if (firstRequest)
          [server sendData:[@"GOODBYE" dataUsingEncoding:NSUTF8StringEncoding] target:[firstRequest bsdOwner]];
-        @endcode
+@/textblock </pre>
 @param dt Non-nil and non-zero data to be sent.
 @param who <em>sockaddr_in</em> structure instance containing the information about the client.
 */

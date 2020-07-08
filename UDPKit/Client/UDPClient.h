@@ -88,10 +88,10 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
 @brief A convenience wrapper that sends a request and right after that receives the response from the server.
 @discussion This method was made to speed up the coding process and is an equivalent to:
-        @code
+<pre>@textblock
             [client sendRequest:rq];
             NSData* matchingData = [client receiveData];
-         @endcode
+@/textblock </pre>
 @param rq A valid instance of UDPClientRequest containing non-nil data and representing the sent request. Must be not <b>nil</b>.
 @return NSData* The raw response from the remote UDP server.
 */
@@ -100,10 +100,10 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
 @brief A convenience wrapper that sends a request and right after that receives the response from the server.
 @discussion This method was made to speed up the coding process and is an equivalent to:
-         @code
+<pre>@textblock
             [client sendData:data];
             NSData* matchingData = [client receiveData];
-         @endcode
+@/textblock </pre>
 @param data The contents of the sent packet. Must be not <b>nil</b>.
 @return NSData* The raw response from the remote UDP server.
 */
