@@ -14,15 +14,13 @@ Check out [main.m](UDPKitDemo/main.m) file inside the *UDPKitDemo* folder which 
 
 ## Building UDPKit
 
-UDPKit is meant to be built as a framework included in other applications. The respective Xcode projects for macOS (*UDPKit.xcodeproj*) and iOS/iPadOS (not ready yet, but soon will be *UDPKit_iOS.xcodeproj*) can be added to your Xcode workspace so that the framework could be compiled and distributed in your application without any additional steps.
+UDPKit is meant to be built as a framework included in other applications. The respective Xcode projects for macOS (*UDPKit.xcodeproj*) and iOS/iPadOS (*UDPKit_iOS.xcodeproj*) can be added to your Xcode workspace so that the framework could be compiled and distributed in your application without any additional steps.
 
 However, of course you may build UDPKit framework entirely standalone either via Xcode or ``xcodebuild``, just like you would do with any other Xcode project. Building a standalone version might be quite handy if you don't use Xcode workspaces.
 
 ## Limitations
 
 Currently, UDPKit does not support IPv6 (while its preliminary wrapper does support UDP server socket creation for IPv6, client creation and well... the classes themselves are not ready).
-
-UDPKit can build on iOS, however, the project file is currently not added to the source repository.
 
 ## Documentation
 
