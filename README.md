@@ -1,0 +1,27 @@
+# UDPKit
+
+*A tiny Objective-C framework for building embedded UDP servers*
+
+***Copyright (C) Tim K/RoverAMD <timprogrammer@rambler.ru> 2020.*** Licensed under 2-clause BSD License
+
+## What is UDPKit?
+
+UDPKit is a fairly tiny Objective-C framework that wraps around POSIX BSD sockets API in a (probably) convenient object-oriented layer that allows to build UDP servers that are embedded into your Cocoa application.
+
+## UDPKit Example
+
+Check out [main.m](UDPKitDemo/main.m) file inside the *UDPKitDemo* folder which implements a minimalistic echo UDP server in just ~8-10 lines of code.
+
+## Building UDPKit
+
+UDPKit is meant to be built as a framework included in other applications. The respective Xcode projects for macOS (*UDPKit.xcodeproj*) and iOS/iPadOS (*UDPKit_iOS.xcodeproj*) can be added to your Xcode workspace so that the framework could be compiled and distributed in your application without any additional steps.
+
+However, of course you may build UDPKit framework entirely standalone either via Xcode or ``xcodebuild``, just like you would do with any other Xcode project. Building a standalone version might be quite handy if you don't use Xcode workspaces.
+
+## Documentation
+
+Well... for now, there is none. :P But there will be at least a brief introduction when the first release of the framework gets ready.
+
+## License
+
+UDPKit uses a 2-clause BSD License. Consult the [LICENSE](LICENSE) file for further information.
