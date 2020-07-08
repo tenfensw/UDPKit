@@ -19,3 +19,4 @@ FOUNDATION_EXPORT const unsigned char UDPKitVersionString[];
 #import <UDPKit/BSDSocketsPublicAbstraction.h>
 #import <UDPKit/UDPClientRequest.h>
 #import <UDPKit/UDPServer.h>
+#import <UDPKit/UDPClient.h>

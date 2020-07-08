@@ -33,6 +33,8 @@ SA_INv6 UDPMakeSAv6(NSString* _Nullable preferredIPAddress, const NSUInteger por
 int UDPMakeSocket(SA_IN* _Nonnull socketAddress);
 int UDPMakeSocketv6(SA_INv6* _Nonnull socketAddress6);
 
+int UDPMakeClientSocket(SA_IN* _Nonnull socketAddress);
+
 NSString* _Nullable UDPSerializeErrno(void);
 
 #endif /* UDPKit_Header_BSDSocketsWrapper */

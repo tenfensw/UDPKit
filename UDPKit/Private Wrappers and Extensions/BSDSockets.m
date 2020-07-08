@@ -62,3 +62,14 @@ NSString* _Nullable UDPSerializeErrno() {
         return nil;
     return [[NSString alloc] initWithCString:stringForErrno encoding:NSUTF8StringEncoding];
 }
+
+int UDPMakeClientSocket(SA_IN* _Nonnull socketAddress) {
+    int desc = socket(PF_INET, SOCK_DGRAM, 0);
+    if (desc == -1)
+        return -1;
+    if (connect(desc, (SA*)(&socketAddress), sizeof(*socketAddress)) == -1) {
+        close(desc);
+        return -1;
+    }
+    return desc;
+}

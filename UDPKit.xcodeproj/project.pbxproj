@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27028DA424B65D3300602B52 /* UDPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 27028DA224B65D3300602B52 /* UDPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27028DA524B65D3300602B52 /* UDPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 27028DA324B65D3300602B52 /* UDPClient.m */; };
 		2773746A24B63880006AFC41 /* BSDSocketsPublicAbstraction.h in Headers */ = {isa = PBXBuildFile; fileRef = 2773746924B6384E006AFC41 /* BSDSocketsPublicAbstraction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2773746E24B639EC006AFC41 /* UDPClientRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 2773746C24B639EC006AFC41 /* UDPClientRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2773746F24B639EC006AFC41 /* UDPClientRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2773746D24B639EC006AFC41 /* UDPClientRequest.m */; };
@@ -32,6 +34,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		27028DA224B65D3300602B52 /* UDPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UDPClient.h; sourceTree = "<group>"; };
+		27028DA324B65D3300602B52 /* UDPClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UDPClient.m; sourceTree = "<group>"; };
 		2773746924B6384E006AFC41 /* BSDSocketsPublicAbstraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSDSocketsPublicAbstraction.h; sourceTree = "<group>"; };
 		2773746C24B639EC006AFC41 /* UDPClientRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UDPClientRequest.h; sourceTree = "<group>"; };
 		2773746D24B639EC006AFC41 /* UDPClientRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UDPClientRequest.m; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 			children = (
 				2773746C24B639EC006AFC41 /* UDPClientRequest.h */,
 				2773746D24B639EC006AFC41 /* UDPClientRequest.m */,
+				27028DA224B65D3300602B52 /* UDPClient.h */,
+				27028DA324B65D3300602B52 /* UDPClient.m */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -149,6 +155,7 @@
 				27D5709F24B6271A00DED89D /* UDPKit.h in Headers */,
 				2773746E24B639EC006AFC41 /* UDPClientRequest.h in Headers */,
 				27D570A724B6325D00DED89D /* UDPServer.h in Headers */,
+				27028DA424B65D3300602B52 /* UDPClient.h in Headers */,
 				2773746A24B63880006AFC41 /* BSDSocketsPublicAbstraction.h in Headers */,
 				27D570AC24B634F600DED89D /* BSDSockets.h in Headers */,
 			);
@@ -254,6 +261,7 @@
 			files = (
 				27D570AE24B6360A00DED89D /* BSDSockets.m in Sources */,
 				27D570A824B6325D00DED89D /* UDPServer.m in Sources */,
+				27028DA524B65D3300602B52 /* UDPClient.m in Sources */,
 				2773746F24B639EC006AFC41 /* UDPClientRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
